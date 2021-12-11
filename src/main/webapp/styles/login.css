@@ -1,0 +1,130 @@
+.startPageContainer {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.startPageContainer * {
+    margin: 0;
+    padding: 0;
+}
+
+.formType {
+    width: 15%;
+}
+
+input {
+    margin-top: 2rem;
+    padding: 0.2rem;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+input[type = "text"],
+input[type = "password"] {
+    /*border-bottom: 2px solid #808080;*/
+    border: 2px solid #fe6637;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+
+input[type = "submit"] {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+}
+
+input[type = "submit"]:before{
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+input[type = "submit"]:hover {
+    background: #fe6637;
+    color: #fff;
+}
+
+input[type = "submit"]:hover:before{
+    left: 150px;
+    transition: .5s ease-in-out;
+}
+
+.animated-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgba(30, 255, 188, 1);
+    background: rgba(255, 255, 255, 1);
+    transition: color .3s, background .5s;
+}
+.animated-button:hover {
+
+}
+@keyframes stripes {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 0;
+    }
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    border: 2px solid #fe6637;
+    background-color: #008B8B;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 200px auto;
+}
+
+.checkContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.chosenForm{
+    margin-left: 30px;
+}
+
+.info{
+    width: 100px;
+    white-space: nowrap;
+    padding-left: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
